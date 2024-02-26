@@ -102,3 +102,22 @@ val languages = arrayListOf("Java")
 languages.add("Kotlin")
 ```
 val 참조 자체는 불변일지라도 그 참조를 가리키는 객체의 내부 값은 변경될 수 있다.
+
+## 문자열 템플릿
+
+```kotlin
+fun main(args: Array<String>){
+    val name = if (args.size>0) args[0] else "Kotlin"
+    println("Hello, $name!")
+}
+```
+name이라는 변수를 선언한 후 그 다음줄에서 변수를 사용했다. 코틀린도 다른 스크립트 언어와 비슷하게 변수를 문자열 안에 사용할 수 있다.
+
+이렇게 사용할 수도 있다.
+
+```kotlin
+fun main(args: Array<String>){
+    println("Hello, ${if(args.size > 0) args[0] else "Kotlin"}!")
+}
+```
+
