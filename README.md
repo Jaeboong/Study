@@ -1,4 +1,4 @@
-## 코틀린 공부 1일차
+## 코틀린 공부 1주차
 
 ## Kotlin In ACTION 이라는 책을 1장부터 공부한 내용이다.
 
@@ -120,4 +120,36 @@ fun main(args: Array<String>){
     println("Hello, ${if(args.size > 0) args[0] else "Kotlin"}!")
 }
 ```
+
+## 코틀린에서 클래스 사용하기
+
+```kotlin
+val person = Person("Bob", true)
+println(person.name)
+println(person.isMarried)
+```
+
+코틀린에서는 new 키워드를 사용하지 않고 생성자를 호출한다.
+
+프로퍼티 이름을 직접 사용해도 코틀린이 자동으로 게터를 호출해준다.
+
+코틀린에서는 게터와 세터를 알아서 호출해줘서 편리하다.
+
+게터와 세터를 따로 코드를 쓰지 않으면 알아서 호출하지만 커스텀 게터와 세터를 작성하면 해당 게터와 세터를 사용할 수 있다.
+
+커스텀 접근자는 다음과 같이 만들 수 있다.
+
+```kotlin
+class Rectangle(val height: Int, val width: Int){`
+    val isSqaure: Boolean
+        get(){
+            return height == width
+        }
+}
+```
+
+## 패키지
+
+```kotlin
+
 
