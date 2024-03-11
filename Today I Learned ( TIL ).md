@@ -92,3 +92,111 @@ console.log("Hello developer console");를 사용했지만 변화가 없다.
 console.log("Hello developer console");를 이용해 작성한 것은 아래와 같이 개발자 도구를 열면 있는 console에만 출력이 된다.
 
 ![image](https://github.com/Jaeboong/Study/assets/158824294/ba6aebab-ce42-4683-b63b-4006d1fdf7d8)
+
+## 변수
+
+### 변수의 선언
+
+변수는 다음과 같이 선언할 수 있다.
+
+```javascript
+var a;
+var a, b, c;
+```
+
+그리고 선언한 변수를 다음과 같이 초기화 할 수 있다.
+
+```javascript
+a = 10;
+b = 20;
+c = "Java is fun!";
+```
+
+### 변수의 활용
+
+```javascript
+var msg = "Hello Javascript";
+console.log(msg);
+```
+
+위와 같이 변수에는 정보를 담아 이름을 짓고 해당 변수의 이름으로 정보를 전달할 수 있다.
+
+다음은 다른 실습 예제이다.
+
+- lecture03.html
+  
+```html
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <script src = "lecture03.js"></script>
+    </head>
+    <body>
+        This is a basic HTML page
+    </body>
+</html>
+
+- lecture03.js
+
+```javascript
+var name = prompt("이름을 입력해 주세요.");
+console.log(name, "님 환영합니다.");
+```
+
+![image](https://github.com/Jaeboong/Study/assets/158824294/0f7b3102-16c2-46e8-86ba-7179a81c3bfa)
+
+![image](https://github.com/Jaeboong/Study/assets/158824294/995cb72b-0914-4037-bd29-ca3dadc1690a)
+
+prompt를 사용하면 입력할 수 있는 창이 뜨고 해당 창에 입력한 String을 변수로 저장 후 console창에 프린트한다.
+
+![image](https://github.com/Jaeboong/Study/assets/158824294/95f33850-79d1-4bca-aebb-78640039bc5e)
+
+입력 창에 아무것도 쓰지 않거나 취소하면 null이 입력된다.
+
+## 기본 자료형
+
+### 자료형이란?
+
+- 변수를 저장할 수 있는 값의 종류를 자료형이라고 한다.
+- 자료형의 종류
+  
+  * number Type -> 숫자
+
+  ```javascript
+  var a=100; b=3.14;
+  ```
+  
+  * string Type -> 문자열
+ 
+  ```javascript
+  var c="안녕하세요", d="a";
+  ```
+  
+  * boolean Type -> True/False를 표현
+ 
+  ```javascript
+  var e=true, f=false;
+  ```
+
+###  typeof() 명령어
+
+  - typeof 괄호 안에 들어있는 변수의 type을 알려주는 명령어
+
+```javascript
+console.log(a, typeof(a));
+console.log(b, typeof(b));
+console.log(c, typeof(c));
+console.log(d, typeof(d));
+console.log(e, typeof(e));
+console.log(f, typeof(f));
+```
+
+다음과 같은 코드를 html과 javascipt에 작성 후 실행해보면 다음과 같다.
+
+![image](https://github.com/Jaeboong/Study/assets/158824294/906f96bd-dc22-4815-a278-9f320989d5d2)
+
+개발자 도구 console창에서는 변수의 이름이나 명령어만 입력해도 그 값이 바로 보여진다.
+
+
+
+
