@@ -197,6 +197,10 @@ console.log(f, typeof(f));
 
 개발자 도구 console창에서는 변수의 이름이나 명령어만 입력해도 그 값이 바로 보여진다.
 
+## 오늘 들은 강의
+
+![image](https://github.com/Jaeboong/Study/assets/158824294/94ddf089-ed9f-4e22-b4d2-1dead2b9c241)
+
 
 
 
