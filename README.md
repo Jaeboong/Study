@@ -68,4 +68,5 @@ or 블록 위아래로 ```를 써도 가능하다.
 위의 화면에서 체크된 부분을 클릭하면 README 파일의 소스 코드가 나올 것이다.
 나온 소스 코드를 복사하면 끝이다.
 
+참고링크 -> https://velog.io/@ybkim3603/Velog%EB%B2%A8%EB%A1%9C%EA%B7%B8-%EC%82%AC%EC%9A%A9%EB%B2%95-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC
 
