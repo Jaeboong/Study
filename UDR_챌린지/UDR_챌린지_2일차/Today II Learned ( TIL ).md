@@ -170,3 +170,8 @@ console.log("print obj.z: ", obj.z);
 var null_var = null;
 console.log("print null_var type: ", typeof(null_var));
 ```
+결과는 다음과 같다.
+
+![image](https://github.com/Jaeboong/Study/assets/158824294/96e2e560-45b3-4bad-894d-af9ca8c353c0)
+
+
