@@ -239,3 +239,53 @@ concat을 활용할 때 뒤에 .concat을 계속 이어붙여 1개뿐만 아니�
 +를 활용할 때 역시 계속 이어붙일 수 있다.
 
 number type를 String타입과 +로 붙이면 String 타입처럼 붙여져서 나온다.
+
+## String 다루기
+
+### 특정 위치의 문자열 찾기
+
+- .charAt
+  * n번째 문자: str.charAt(n-1)
+  * 마지막 문자: str.charAt(str.length-1);
+- 대괄호([]) 사용
+  * n번째 문자: str[n-1];
+  * 마지막 문자: str[str.length-1]
+
+### 부분 문자열 구하기
+
+- 문자열의 연속된 일부분을 구하는 함수
+  * .substring(pos1, pos2): pos1부터 pos2까지 부분 문자열을 반환
+     * pos2 생략시 pos1부터 끝까지 문자열을 반환
+  * substr(pos, length): pos에서 length길이 만큼의 부분 문자열 반환
+     * length 생략시, pos에서 끝까지 문자열을 반환
+     * pos가 음수인 경우, str.length 뒤에서 -pos개 만큼의 부분 문자열을 반환
+
+### 문자열 검색하기
+
+- indexOf(str):
+- lastIndexOf(str):
+
+## 실습 코드
+
+다음은 위 내용을 코드로 나타낸 실습코드이다.
+
+- lecture13.js
+
+```javascript
+str = "abcdeabcde";
+
+console.log(str.charAt(4));
+console.log(str.charAt(str.length-1));
+console.log(str[7]);
+console.log(str[str.length-1]);
+
+console.log(str.substring(1, 4));
+console.log(str.substr(2, 2));
+
+console.log(str.indexOf("bc"));
+console.log(str.lastIndexOf("f"));
+```
+
+![image](https://github.com/Jaeboong/Study/assets/158824294/ca2e5528-44df-46a9-a634-bee65507bf4f)
+
+인덱스를 찾는 함수를 사용했을 때 존재하지 않는 문자열을 찾게하면 -1을 반환한다.
