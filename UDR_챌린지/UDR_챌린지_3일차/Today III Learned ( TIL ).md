@@ -1,1 +1,144 @@
+## 산술 연산자
 
+산술 연산자는 A 연산자 B의 형태로 사용하며 피연산자는 변수나 숫자가 될 수 있다.
+
+* \+ 더하기
+* \- 빼기
+* \* 곱하기
+* \/ 나누기
+* \% 나머지
+
+### 단항 연산자
+
+하나의 피연산자(A)를 가진 연산자로 연산자 A, A 연산자 형태로 사용한다.
+
+- \-A -> A x -1
+
+### 증감연산자
+
+변수의 값을 1씩 증가시키거나 감소시킬 수 있다.
+
+- A++ 는 A = A+1
+
+- A-- 는 A = A-1과 같다
+
+
+### Math 명령어
+
+- Math.pow(A, B): A의 B승
+- Math.sqrt(A): A의 제곱근
+- Math.random(): 0~1사이의 임의의 난수를 발생
+
+## 실습 코드
+
+- lecture09.js
+
+```javascript
+a = 4, b = 5;
+
+console.log("a:", a, " b:", b);
+console.log("a+b=",a+b);
+console.log("a-b=",a-b);
+console.log("a*b=",a*b);
+console.log("a/b=",a/b);
+console.log("a%b=",a%b);
+
+console.log("a++=",a++);
+console.log("a--=",b--);
+
+console.log("a^2=",Math.pow(a, b));
+console.log("sqrt(a)=",Math.sqrt(b));
+```
+
+결과는 다음과 같다
+
+![image](https://github.com/Jaeboong/Study/assets/158824294/49eb3c96-0623-440e-9d6f-eb53ded7d4f9)
+
+## 함수
+
+### 함수의 정의
+- 호출에 의해 여러번 실행할 수 있는 코드 블럭을 말한다.
+  * 반복되는 코드 감소
+  * 코드의 개발 및 수정 용이
+
+함수는 일반적으로 호출하면 파라미터 값을 받아 결과값을 반환한다.
+
+함수의 일반적인 형태와 여러가지 예제는 다음과 같다
+
+## 실습 코드
+
+```javascript
+function 함수이름(인자1, 인자2){
+    /*
+    실행할 코드
+    */
+    return 결과값;
+}
+
+function sum(arg1, arg2){
+    var result = arg1 + arg2;
+    return result;
+}
+
+function print(message){
+    console.log("print function in");
+    console.log(message);
+}
+
+function return_test(){
+    return;
+    console.log("실행되지 않는 코드");
+}
+
+console.log(sum(1, 2));
+console.log(return_test());
+
+msg = "Hello Function!";
+print(msg);
+```
+
+결과는 다음과 같다.
+
+![image](https://github.com/Jaeboong/Study/assets/158824294/63b93e6e-49ea-4d29-8bf1-c8601462cb50)
+
+
+sum 함수의 경우 1과 2를 파라미터 값으로 넣어 1+2인 3이 출력되었다.
+
+return_test함수의 경우 리턴값이 없으므로 undefined로 표기되었다.
+
+함수는 반드시 결과값을 리턴하는 용도가 아닌 함수 안에 console.log()함수를 사용하거나 print()로 어떤 값을 출력하는 등의 기능을 수행하는 용도로도 사용된다.
+
+## 관계연산자
+
+### Relational operator, 관계연산자
+
+두 표현식 A, B의 관계를 비교하는 이항연산자와 관게에 따라 boolean 타입의 true, false로 표현된다.
+
+관계연산자의 종류는 다음과 같다
+
+- <    ex) A < B   A는 B보다 작다
+- \>   ex) A > B   A는 B보다 크다
+- <=   ex) A <= B  A는 B보다 작거나 같다.
+- \>=  ex) A >= B  A는 B보다 크거나 같다.
+- ==   ex) A == B  A와 B는 같은가? 같은경우 참 다르면 거짓
+- !=   ex) A != B  A와 B는 다른가? 다른경우 참 같으면 참
+
+### Logical operator, 논리연산자
+
+-두 boolean 피연산자에 대해 연산한다.
+
+  * AND(&&) 연산자
+
+- 두 피연산자가 모두 true인 경우 true를 반환한다.
+
+  *하나라도 false인 경우 false를 반환한다.
+
+- OR(||) 연산자
+
+  * 두 연산자중 한개만 true여도 true를 반환한다.
+
+  * 둘 다 false여야 false를 반환한다.
+
+- NOT(!) 연산자
+
+  * 피연산자의 결과를 반대로 만드는 연산자이다. true -> false / false -> true
