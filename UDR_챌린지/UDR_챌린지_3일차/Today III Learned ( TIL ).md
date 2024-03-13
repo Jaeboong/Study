@@ -125,13 +125,13 @@ return_test함수의 경우 리턴값이 없으므로 undefined로 표기되었�
 
 ### Logical operator, 논리연산자
 
--두 boolean 피연산자에 대해 연산한다.
+- 두 boolean 피연산자에 대해 연산한다.
 
   * AND(&&) 연산자
 
 - 두 피연산자가 모두 true인 경우 true를 반환한다.
 
-  *하나라도 false인 경우 false를 반환한다.
+  * 하나라도 false인 경우 false를 반환한다.
 
 - OR(||) 연산자
 
@@ -142,3 +142,44 @@ return_test함수의 경우 리턴값이 없으므로 undefined로 표기되었�
 - NOT(!) 연산자
 
   * 피연산자의 결과를 반대로 만드는 연산자이다. true -> false / false -> true
+ 
+  ## 실습 코드
+
+  다음은 위 설명한 관계연산자, 논리연산자를 실습한 코드이다.
+
+  - lecture11.js
+ 
+  ```javascript
+  a = 5, b = 7, c = 5, d = 6;
+
+console.log("a:", a, "b:", b, "c:", c, "d:", d);
+console.log("a < b? ", a<b);
+console.log("a > b? ", a>b);
+console.log("a <= b? ", a<=b);
+console.log("d >= b? ", d>=b);
+console.log("a == c? ", a==c);
+console.log("a != b? ", a!=b);
+
+e = true, f = false, g = true, h = false;
+
+console.log("e:", e, "f:", f, "g:", g, "h:", h);
+
+console.log("e&&f: ",e&&f);
+console.log("e&&g: ",e&&g);
+console.log("e||f: ",e||f);
+console.log("h||f: ",h||f);
+console.log("a: ",a);
+console.log("!a: ",!a);
+console.log("!f: ",!f);
+```
+
+결과는 다음과 같다.
+ 
+![image](https://github.com/Jaeboong/Study/assets/158824294/5670b396-d636-4b7a-89d6-6e6e5c9a6c11)
+
+숫자 5인 a를 !a로 출력하니 false가 나왔다.
+
+a를 0으로 수정한 후 !a로 출력하니 true가 나왔다.
+
+0이 false를 나타내고 0이 아닌 수를 true로 표기하기 때문인 것 같다.
+
