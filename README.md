@@ -49,3 +49,17 @@ untidy data를 clean data로 변환하면 숫자의 경우는 as.numerical로 �
 a, b, a와 같은 data를
 
 1 2 1과 같이 실수화 시킬 수 있다.
+
+gather(key = "date", value = "weight", -name)
+
+데이터를 기준을 잡고 다시 정렬시킨다.
+
+key인 data를 기준으로 잡고 value값과 combine해서 정렬시킨다.
+
+-name은 name이란 속성은 정렬하는데 무시한다.
+
+mutate(data = str_remove(data, "wt__"), date = dmy(date))
+
+dmy를 쓰면 속성을 factor나 다른 값이 아닌 날짜인것을 data form을 date로 변경해준다.
+
+dmy를 쓰면 date 속성도 numeric, factor 모두 가능하지만 dmy를 쓰지 않으면 numerical은 불가능
