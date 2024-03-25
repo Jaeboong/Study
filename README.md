@@ -39,3 +39,13 @@ data <- tibble(fread("small_data.csv", head= T, sep=","))
 
 glimpse(data) <- 데이터가 커지면 glimpse 사용
 summary(data) <- 
+
+factor variable로의 변환
+
+untidy data를 clean data로 변환하면 숫자의 경우는 as.numerical로 실수화 시킬 수 있다.
+
+하지만 chr 타입의 경우 as.factor로 먼저 변환을 해준 후 as.numerical로 실수화 시켜주면 
+
+a, b, a와 같은 data를
+
+1 2 1과 같이 실수화 시킬 수 있다.
