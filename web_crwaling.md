@@ -25,6 +25,12 @@ mutate와 str_replace_all을 사용
 - mutate는 데이터 프레임 자료형에 새로운 파생 column을 만드는 함수이다.
 - mutate 함수는 같은 이름으로 여러 패키지에 존재하지만 dplyr 패키지의 mutate 함수를 많이 사용한다.
 
+mutate 사용 예시
+```
+mutate(dataframe, 새로운 column명 = 기존 columns을 조합한 수식)
+```
+
+
 - str_replace_all은 문자의 치환과 삭제에 사용된다.
 
 다음은 예시코드이다.
