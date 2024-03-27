@@ -184,7 +184,18 @@ for( i in 1:nrow(df)){
   
 }
 
-lapply(result)
+result[[2]]
+
+result.tmp <- lapply(result, FUN = function(x){x[c(1:90),]})
+
+dim(result[[1]])
+dim(result.tmp[[1]])
+
+head(result.tmp[[1]])
+head(result.tmp[[2]])
+head(result.tmp[[3]])
+
+(result.tmp)
 
 
 
