@@ -63,3 +63,29 @@ mutate(data = str_remove(data, "wt__"), date = dmy(date))
 dmy를 쓰면 속성을 factor나 다른 값이 아닌 날짜인것을 data form을 date로 변경해준다.
 
 dmy를 쓰면 date 속성도 numeric, factor 모두 가능하지만 dmy를 쓰지 않으면 numerical은 불가능
+
+
+ex) A %in% B
+
+```
+A = c(1,2,3,4,5)
+B = c(2,3,4)
+
+A %in% B
+```
+
+FALSE TRUE TRUE TRUE FALSE
+
+is.na?
+
+ex) 
+
+```
+article <- c("a", NA, NA, "b")
+article[which(is.na(article))] = "temp"
+article
+```
+
+-> a tmep temp b
+
+
