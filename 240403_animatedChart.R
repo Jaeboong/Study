@@ -39,7 +39,7 @@ plot1 <- data %>%
   ggplot() + 
   geom_point(aes(x = gdpPercap, y = lifeExp, col = continent, size = pop), alpha = 0.8) + theme_minimal() + 
   theme(legend.position = "bottom") + guides(size = "none") + 
-  labs(x = "PIB per Capita" ,y = "Esperanza de Vida",  col = "") 
+  labs(x = "GDP" ,y = "lifeEXP",  col = "") 
 
 plot1
 
@@ -49,6 +49,12 @@ plot1 + transition_time(year)
 ## Add title
 plot1 + transition_time(year) +
   labs(title = "Year: {frame_time}")
+
+output <- plot1 + transition_time(year) +
+  labs(title = "Year: {frame_time}")
+
+animate(output, width = 1080, height = 1050, fps = 30, duration = 15, rewind = F,
+        renderer = gifski_renderer("test1.gif"))
 
 ## With Several Grapic parameter
 plot1 +
@@ -106,7 +112,8 @@ animate(animateBarChart, width = 700, height = 432, fps = 25, duration = 15, rew
 
 
 
-
+view(ChickWeight)
+glimpse(ChickWeight)
 
 
 ## Drawing chicken weight without animation
@@ -127,7 +134,7 @@ output <- ggplot(ChickWeight, aes(x=Chick, y=weight, fill=Diet))+
                     state_length=0.5)
 
 
-animate(output, width = 1080, height = 1050, fps = 30, duration = 15, rewind = T,
+animate(output, width = 1080, height = 1050, fps = 30, duration = 15, rewind = F,
         renderer = gifski_renderer("ChickenAnimatedChart.gif"))
 
 
