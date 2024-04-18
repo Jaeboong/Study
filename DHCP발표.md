@@ -93,5 +93,36 @@ DHCP 서버는 중계 에이전트의 IP 주소를 요청 메세지에 있는 �
 
 
 
+# IP 헤더
+
+IP 헤더는 인터넷 프로토콜(IP)을 사용하여 데이터를 라우팅하고 전송하는 데 필요한 정보를 포함합니다.
+
+Version: IP 프로토콜의 버전 (IPv4 또는 IPv6).
+Header Length: 헤더의 길이를 나타냅니다.
+Type of Service: 서비스의 타입을 정의하여, 데이터 처리 우선 순위를 지정합니다.
+Total Length: 헤더와 데이터를 포함한 전체 패킷의 길이.
+Identification: 각각의 IP 패킷을 식별하는 데 사용되는 식별자.
+Flags: IP 패킷의 조각남(fragmentation)을 제어하는 데 사용되는 플래그.
+Fragment Offset: 조각난 패킷들이 원래의 순서대로 재조립될 수 있도록 돕는 오프셋 값.
+Time to Live (TTL): 패킷이 네트워크에서 살아있을 수 있는 시간 또는 홉(hop)의 수.
+Protocol: 상위 계층의 프로토콜을 나타냅니다 (여기서는 UDP).
+Header Checksum: 헤더의 오류를 검사하는 데 사용되는 체크섬.
+Source IP Address: 패킷을 보내는 호스트의 IP 주소.
+Destination IP Address: 패킷을 받는 호스트의 IP 주소.
+
+# UDP 헤더
+
+UDP 헤더
+UDP 헤더는 사용자 데이터그램 프로토콜(UDP)을 사용하여 정보를 전송하는 데 필요한 필드를 포함합니다.
+
+Source Port: 패킷을 보내는 측의 포트 번호.
+Destination Port: 패킷을 받는 측의 포트 번호 (DHCP 서버는 67, DHCP 클라이언트는 68).
+Length: UDP 헤더와 데이터를 포함한 전체 길이.
+Checksum: 데이터의 오류를 검사하는 데 사용되는 체크섬.
+이러한 IP와 UDP 헤더를 통해 DHCP 패킷은 안전하고 정확하게 전송될 수 있으며, 네트워크 상에서 적절한 목적지로 라우팅됩니다. DHCP는 이 헤더들을 사용하여 브로드캐스트나 유니캐스트 통신을 수행하며, 네트워크 장비와 클라이언트 사이의 IP 주소 설정과 관련 정보를 교환합니다.
+
+
+
+
 
 
