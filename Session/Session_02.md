@@ -1,4 +1,4 @@
-![image](https://github.com/Jaeboong/Study/assets/158824294/87c49d53-6a48-49b4-9ea1-b9b88bf7d6d4)# Git? Github?
+# Git? Github?
 
 - 내 소스 코드 저장(버전 관리)
 - 소스코드 공유
