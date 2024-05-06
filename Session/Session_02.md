@@ -29,11 +29,11 @@ New를 클릭!
 
 예를 들어 협업을 하는데 이런 코드를 가지고 협업을 한다고 가정하면
 
-이 환경을 내 컴퓨터로 가져와야 함
+이 환경을 내 컴퓨터로 가져와야 합니다.
 
 그리고 내 컴퓨터로 작업 환경을 가져오고 코드를 수정했을 때 다이렉트로 원본 코드에 수정을 하면 안됨
 
-따라서 Branch 를 만들어 코드를 수정하고 확인을 받은 후 원본 코드로 병합한다.
+따라서 Branch 를 만들어 코드를 수정하고 확인을 받은 후 원본 코드로 병합합니다.
 
 ## 환경 세팅
 
@@ -68,13 +68,13 @@ git push -u origin master
 
 ![image](https://github.com/Jaeboong/Study/assets/158824294/950ac7d1-98e7-4d5d-ae2d-28fc30f7bd72)
 
-이렇게 변경 사항이 생겼을 때 git add .(모든 변경사항을 add)을 하고 git status를 하면 변경 사항을 볼 수 있다.
+이렇게 변경 사항이 생겼을 때 git add .(모든 변경사항을 add)을 하고 git status를 하면 변경 사항을 볼 수 있습니다.
 
-그리고 commit, push를 진행해주면 된다.
+그리고 commit, push를 진행해주면 됩니다.
 
 ![image](https://github.com/Jaeboong/Study/assets/158824294/9dcdeb70-7c99-499d-9f58-4d236504ce4a)
 
-pull은 그냥 git pull해주면 된다.
+pull은 그냥 git pull해주면 됩니다.
 
 
 ## branch 생성
@@ -129,23 +129,23 @@ cd Session
 
 마지막으로
 
-아까 우리는 branch를 새로 만들어 원본의 소스코드를 건드리지 않아야 한다고 했는데 이렇게 되면 원본 코드를 건드리게 된다.
+아까 우리는 branch를 새로 만들어 원본의 소스코드를 건드리지 않아야 한다고 했는데 이렇게 되면 원본 코드를 건드리게 됩니다.
 
 그럼 push를 master가 아닌 Kimjaehwan에게 해야하는데
 
-git push origin Kimjaehwan을 쓰면 오류가 뜬다.
+git push origin Kimjaehwan을 쓰면 오류가 뜹니다.
 
 ![image](https://github.com/Jaeboong/Study/assets/158824294/d56b97f7-0fa6-419f-abc7-1c5d783b3479)
 
-현재 branch를 확인하면 master밖에 없다고 뜬다.
+현재 branch를 확인하면 master밖에 없다고 뜹니다.
 
 ![image](https://github.com/Jaeboong/Study/assets/158824294/6c7c2e0a-1129-4e80-8a99-ee961be55cf1)
 
-remote의 브랜치는 Kimjaehwan이 뜬다.
+remote의 브랜치는 Kimjaehwan이 뜹니다.
 
-clone을 하면 모든 정보를 가져오긴 하지만 branch까지 가져오진 않는다.
+clone을 하면 모든 정보를 가져오긴 하지만 branch까지 가져오진 않습니다.
 
-따라서 브랜치를 생성해주고 브랜치 전환을 해주어야 한다.
+따라서 브랜치를 생성해주고 브랜치 전환을 해주어야 합니다.
 
 ```
 git branch Kimjaehwan
