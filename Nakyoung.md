@@ -39,3 +39,13 @@
 
 추가 학점인정 신청 시 **현재 인정과목** and **2024년 1 ,2학기 수업** 과 겹치지 않는지 체크 후 학점인정 신청!!
 
+## 2024 1학기 수업
+
+![image](https://github.com/user-attachments/assets/c35e171b-e2e3-4afa-a185-0d1796b5f8b9)
+
+## 2024 2학기 수업(신청 예정, 수정 필요)
+
+![image](https://github.com/user-attachments/assets/46d0dfb0-e484-4154-9c09-8d652e19719a)
+
+
+
